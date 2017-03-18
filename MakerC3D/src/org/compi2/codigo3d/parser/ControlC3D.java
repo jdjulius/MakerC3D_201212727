@@ -5,9 +5,15 @@ package org.compi2.codigo3d.parser;
  * @author esvux
  */
 public class ControlC3D {
+
+    
     
     private static int temp = 0;
     private static String c3d = "";
+    
+    private static int etiqueta = 0;
+    private static String etiqueva_v = "";
+    private static String etiqueta_f = "";
     
     /**
      * Reinicia las variables estáticas relacionadas con la generación del
@@ -24,6 +30,10 @@ public class ControlC3D {
      */
     public static String generaTemp(){
         return "t$"+temp++;
+    }
+    
+     public static String generaEtq(){
+        return "L"+etiqueta++;
     }
     
     /**
@@ -43,4 +53,45 @@ public class ControlC3D {
         return c3d;
     }
     
+    /**
+     * @return the etiqueta
+     */
+    public static int getEtiqueta() {
+        return etiqueta;
+    }
+
+    /**
+     * @param aEtiqueta the etiqueta to set
+     */
+    public static void setEtiqueta(int aEtiqueta) {
+        etiqueta = aEtiqueta;
+    }
+
+    /**
+     * @return the etiqueva_v
+     */
+    public static String getEtiqueva_v() {
+        return etiqueva_v;
+    }
+
+    /**
+     * @param aEtiqueva_v the etiqueva_v to set
+     */
+    public static void setEtiqueva_v(String aEtiqueva_v) {
+        etiqueva_v = aEtiqueva_v;
+    }
+
+    /**
+     * @return the etiqueta_f
+     */
+    public static String getEtiqueta_f() {
+        return etiqueta_f;
+    }
+
+    /**
+     * @param aEtiqueta_f the etiqueta_f to set
+     */
+    public static void setEtiqueta_f(String aEtiqueta_f) {
+        etiqueta_f = aEtiqueta_f;
+    }
 }

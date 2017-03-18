@@ -63,6 +63,7 @@ ENTER   = [\ \n]
 <YYINITIAL> {AND}	    { return new Symbol(sym.AND, yyline, yycolumn, null); }
 <YYINITIAL> {OR}	    { return new Symbol(sym.OR, yyline, yycolumn, null); }
 <YYINITIAL> {NOT}	    { return new Symbol(sym.NOT, yyline, yycolumn, null); }
+
 <YYINITIAL> {SPACE}     { /*Espacios en blanco, ignorados*/ }
 <YYINITIAL> {ENTER}     { /*Saltos de linea, ignorados*/}
 
